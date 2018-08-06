@@ -7,7 +7,7 @@ const fs = require('fs');
 
 
 const client = new Commando.Client({
-  owner: ' 442943210092888065 ', 
+  owner: '442943210092888065', 
   commandPrefix: 'Wd!', 
   disableEveryone: true,
   unknownCommandResponse: false
@@ -65,7 +65,7 @@ client.on('commandError', (command, err) => console.log('[COMMAND ERROR]', comma
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}`)
-  client.user.setActivity('Wd!help | By Roy Kimochi ✅#9284 ');
+  client.user.setActivity('Wd!help | By Roy Kimochi ✅#9284');
 });
 
 client.login(process.env.TOKEN);
